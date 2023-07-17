@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Builder</title>
+  <link rel="stylesheet" href="../css/styl.css">
+</head>
+<body>
+
+
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Navbar</title>
+        </head>
+        <body>
+            <nav class="navbar">
+                <div class="navbar-container container">
+                    <input type="checkbox" name="" id="">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="menu-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <h1 class="logo">Navbar</h1>
+                </div>
+            </nav>
+        </body>
+        </html>
+
+  <div class="container">
+    <h1>Quiz Builder</h1>
+    <button id="create-quiz-btn">Create Quiz</button>
+    <div id="quizzes-container"></div>
+  </div>
+
+  <div class="modal" id="create-quiz-modal">
+    <div class="modal-content">
+      <h2>Create Quiz</h2>
+      <form id="create-quiz-form">
+        <div class="form-group">
+          <label for="quiz-title">Quiz Title:</label>
+          <input type="text" id="quiz-title" name="quiz-title" required>
+        </div>
+        <div class="form-group">
+          <label for="quiz-description">Quiz Description:</label>
+          <textarea id="quiz-description" name="quiz-description" required></textarea>
+        </div>
+        <div id="questions-container"></div>
+        <div class="form-group">
+          <button type="button" id="add-question-btn">Add Question</button>
+        </div>
+        <div class="form-group">
+          <button type="submit">Create Quiz</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../script/das.js"></script>
+</body>
+</html>
